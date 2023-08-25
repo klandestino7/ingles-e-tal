@@ -11,7 +11,7 @@ import TextTaged from '@/components/TextTaged';
 const CallToActionBottom = () => {
     const [ display, setDisplay ] = useState(false);
 
-	const bgList = useColorModeValue('white', 'whiteAlpha.100');
+	const bgList = useColorModeValue('blackAlpha.100', 'whiteAlpha.100');
 	const bgShadow = useColorModeValue('14px 17px 40px 4px rgba(112, 144, 176, 0.08)', 'unset');
 
     const handleScroll = () => {

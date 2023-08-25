@@ -21,13 +21,13 @@ import { NextSeo } from 'next-seo';
 
 export default function Home() {
 
-    const { colorMode, toggleColorMode } = useColorMode()
-    useEffect(() =>{
-        if (colorMode == "light") 
-        {
-            toggleColorMode();
-        }
-    }, [])
+    // const { colorMode, toggleColorMode } = useColorMode()
+    // useEffect(() =>{
+    //     if (colorMode == "light") 
+    //     {
+    //         toggleColorMode();
+    //     }
+    // }, [])
 
 
     return (

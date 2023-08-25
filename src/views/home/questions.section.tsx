@@ -1,5 +1,5 @@
 'use client';
-import { Image, Box, Button, Container, Flex, Grid, GridItem, Heading, Icon, Text, List, ListItem, ListIcon, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from '@chakra-ui/react'
+import { Image, Box, Button, Container, Flex, Grid, GridItem, Heading, Icon, Text, List, ListItem, ListIcon, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, useColorModeValue } from '@chakra-ui/react'
 import Logo from '@/components/logo';
 
 import { HiPlus } from 'react-icons/hi';
@@ -93,16 +93,21 @@ const AccItem = ({
     title: string,
     description: string
 }) => {
+
+	const bgList = useColorModeValue('blackAlpha.200', 'whiteAlpha.100');
+	const bgExpdanded = useColorModeValue('blackAlpha.800', 'whiteAlpha.800');
+	const colorExpanded = useColorModeValue('white', 'black');
+
     return (
         <AccordionItem
             w={"full"}
         >
         <AccordionButton
-            bg={"whiteAlpha.200"}
+            bg={bgList}
             _hover={{
                 background: "whiteAlpha.400"
             }}
-            _expanded={{ bg: 'whiteAlpha.800', color: 'black' }}
+            _expanded={{ bg: bgExpdanded, color: colorExpanded }}
         >
             <Box as="span" flex='1' textAlign='left'>
                 <Text

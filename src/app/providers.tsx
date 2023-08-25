@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 
 import React, { useState } from "react"
 import { Toaster } from 'react-hot-toast';
+import Script from 'next/script';
 
 export function Providers({
     children
@@ -21,6 +22,7 @@ export function Providers({
             <CacheProvider>
                 <ChakraProvider theme={theme}>
                     {children}
+                    <Script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js" />
                 </ChakraProvider>
             </CacheProvider>
         </QueryClientProvider>

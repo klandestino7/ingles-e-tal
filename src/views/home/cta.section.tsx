@@ -19,7 +19,8 @@ const Cta = () => {
     
     const { mutate, isLoading, error  } = useSubscribeEmail();
 
-	const bgList = useColorModeValue('white', 'whiteAlpha.100');
+	const bgList = useColorModeValue('blackAlpha.200', 'whiteAlpha.100');
+    const inputBorderColor = useColorModeValue('blackAlpha.400', 'whiteAlpha.400');
 	const bgShadow = useColorModeValue('14px 17px 40px 4px rgba(112, 144, 176, 0.08)', 'unset');
 
     const methods = useForm<SubscribeProps>({ mode: "onBlur" });
@@ -70,7 +71,6 @@ const Cta = () => {
             },
         });
 	};
-
 
 
     return (
@@ -152,6 +152,7 @@ const Cta = () => {
                                         fontSize={"1.3em"}
                                         color={"var(--color-secondary)"}
                                         w={"80%"}
+                                        borderColor={inputBorderColor}
                                         {...register("email", { required: "É obrigatório informar um email." })}
                                     />
                                     <Button

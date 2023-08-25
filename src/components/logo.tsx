@@ -1,13 +1,14 @@
-import { Image } from "@chakra-ui/react"
+import { Image, useColorMode } from "@chakra-ui/react"
 
 const Logo = () => {
+    const { colorMode } = useColorMode()
     return (
         <>
             <Image 
                 src={"./images/logo.png"}
-                // style={{
-                //     filter: "invert(1)"
-                // }}
+                style={{
+                    filter: colorMode == "light" ? 'invert(1)' : 'invert(0)'
+                }}
                 alt=""
             />
         </>

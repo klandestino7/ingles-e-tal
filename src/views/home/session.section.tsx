@@ -1,5 +1,5 @@
 'use client';
-import { Image, Box, Button, Container, Flex, Grid, GridItem, Heading, Icon, Text, List, ListItem, ListIcon } from '@chakra-ui/react'
+import { Image, Box, Button, Container, Flex, Grid, GridItem, Heading, Icon, Text, List, ListItem, ListIcon, useColorModeValue } from '@chakra-ui/react'
 import Logo from '@/components/logo';
 
 import { HiPlus } from 'react-icons/hi';
@@ -9,6 +9,8 @@ const Session = () => {
 
     const pictureBoxW = { base: "full", md: "500px" }
     const pictureBoxH = { base: "250px", md: "320px" }
+
+    const bgPicture = useColorModeValue("whiteAlpha.500","blackAlpha.500")
 
     return (
         <Flex
@@ -45,7 +47,7 @@ const Session = () => {
                     position={"relative"}
                     w={pictureBoxW}
                     h={pictureBoxH}
-                    bg={"blackAlpha.500"}
+                    bg={bgPicture}
                 >
                     <Image 
                         src={"./images/MOCKUP-GERAL-3.png"}

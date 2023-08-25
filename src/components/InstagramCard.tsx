@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Flex, Text } from "@chakra-ui/react"
+import { Avatar, Box, Button, Flex, Text, useColorModeValue } from "@chakra-ui/react"
 
 
 const InstagramCard = ({
@@ -8,10 +8,12 @@ const InstagramCard = ({
     username: string,
     picture: string
 }) => {
+    const bgColor = useColorModeValue("rgba(20,20,20, 0.1)", "rgba(200,200,200, 0.1)")
+    
     return (
         <Flex
 
-            bg={"rgba(200,200,200, 0.1)"}
+            bg={bgColor}
 
             borderRadius={"12px"}
 
