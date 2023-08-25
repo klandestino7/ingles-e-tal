@@ -162,7 +162,6 @@ const Cta = () => {
                                         fontFamily={"var(--font-monserrat)"}
                                         fontWeight={"bold"}
                                         className={"pulse"}
-                                        w={"80%"}
                                         _hover={{
                                             background: "var(--color-secondary)"
                                         }}
@@ -177,6 +176,7 @@ const Cta = () => {
                                         maxW={"400px"}
                                         opacity={"0.5"}
                                         lineHeight={"1em"}
+                                        paddingInline={"2vh"}
                                     >
                                         <small>
                                             Prometemos não usar nenhuma informação de contato para enviar qualquer tipo de SPAM.
