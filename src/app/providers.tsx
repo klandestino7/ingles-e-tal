@@ -1,6 +1,6 @@
 // app/providers.tsx
 'use client'
-import { theme } from '@/theme'
+import theme from '@/theme'
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
 
