@@ -13,11 +13,11 @@ const Forms = () => {
 	const bgShadow = useColorModeValue('14px 17px 40px 4px rgba(112, 144, 176, 0.08)', 'unset');
 
 
-    useEffect(() => {
-        if (window.RDStationForms){
-            new window.RDStationForms('inglesetal-505172d0d430f57f828c', '').createForm()
-        }
-    }, [])
+    // useEffect(() => {
+    //     if (window.RDStationForms){
+    //         new window.RDStationForms('inglesetal-505172d0d430f57f828c', '').createForm()
+    //     }
+    // }, [])
 
     return (
         <Flex
