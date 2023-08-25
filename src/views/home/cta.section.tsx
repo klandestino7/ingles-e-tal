@@ -145,7 +145,6 @@ const Cta = () => {
                                     <Button
                                         background={"var(--color-primary)"}
                                         borderRadius={"15px"}
-                                        w={"fit-content"}
                                         padding={"3.5vh 4vh"}
                                         fontSize={{base: "1em", md :"1.2em"}}
                                         fontFamily={"var(--font-monserrat)"}
