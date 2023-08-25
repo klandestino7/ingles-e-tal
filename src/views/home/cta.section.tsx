@@ -62,7 +62,7 @@ const Cta = () => {
         {
             onSuccess: (data: any) => {
                 toast.success('Cadastrado')
-                // router.push("/obrigado");
+                router.push("/inscricao-confirmada");
             },
             onError: (err: any) => {
                 toast.error('Ocorreu um erro, tente novamente!');
