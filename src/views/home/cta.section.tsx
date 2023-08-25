@@ -5,24 +5,28 @@ import Logo from '@/components/logo';
 import { HiPlus } from 'react-icons/hi';
 import TextTaged from '@/components/TextTaged';
 
-import { useState } from "react";
+import { useState, useEffect} from "react";
 
 import { FaLongArrowAltRight } from "react-icons/fa"
 import { FormProvider, useForm } from 'react-hook-form';
-
-
-export interface SubscribeProps {
-    email: string;
-}
+import { SubscribeProps } from '@/types';
+import { useSubscribeEmail } from '@/data/email';
+import { emailClient } from '@/data/client/email';
+import { useRouter } from 'next/navigation';
+import { toast } from 'react-hot-toast';
 
 const Cta = () => {
+    
+    const { mutate, isLoading, error  } = useSubscribeEmail();
 
 	const bgList = useColorModeValue('white', 'whiteAlpha.100');
 	const bgShadow = useColorModeValue('14px 17px 40px 4px rgba(112, 144, 176, 0.08)', 'unset');
 
     const methods = useForm<SubscribeProps>({ mode: "onBlur" });
 
-    const [ sending, setSending ] = useState(false);
+    const router = useRouter();
+
+    const [ errorEmail, setErrorEmail ] = useState(false);
 
 	const {
 		register,
@@ -32,6 +36,9 @@ const Cta = () => {
         watch,
 	} = methods;
 
+    function isValidEmail(email: string) {
+        return /\S+@\S+\.\S+/.test(email);
+    }
 
 	const handleSubscribeOnCourse = async (
         data: SubscribeProps,
@@ -39,25 +46,29 @@ const Cta = () => {
 	) => {
 		e?.preventDefault();
 
-        setSending(true);
+        const validEmail = isValidEmail(data.email);
+        
+        setErrorEmail(!validEmail);
 
-        // const response = await mutate({
-        //     ...data,
-        //     referal: referal,
-        // },
-        // {
-        //     onSuccess: (data) => {
-        //         onClose()
-        //         router.push(`/pedidos/${data.order.orderId}`)
-        //     },
-        //     onError: () => {
-        //         toast.error(`Não foi possível processar o pedido, tente novamente.`, {
-        //             // className: '-mt-10 xs:mt-0',
-        //         });
-        //         onClose()
-        //         return
-        //     },
-        // });
+        if (!validEmail) {
+            toast.error('Email com formato inválido');
+            return;
+        }
+
+        await mutate({
+            email: data.email,
+            conversionIdentifier: "InglesETal"
+        },
+        {
+            onSuccess: (data: any) => {
+                toast.success('Cadastrado')
+                // router.push("/obrigado");
+            },
+            onError: (err: any) => {
+                toast.error('Ocorreu um erro, tente novamente!');
+                return
+            },
+        });
 	};
 
 
@@ -93,7 +104,7 @@ const Cta = () => {
                 >
 
                     {
-                        sending &&
+                        isLoading &&
                         <Flex
                             w={"100%"}
                             h={"100%"}
@@ -133,6 +144,7 @@ const Cta = () => {
                                     alignItems={"center"}
                                     gap={"2vh"}
                                 >
+                                    {errorEmail && <Text fontSize={"sm"} color={"red.400"}> Email com formato inválido </Text>}
                                     {errors.email && <Text fontSize={"sm"} color={"red.400"}>{errors.email.message}</Text>}
                                     <Input
                                         placeholder='Insira seu melhor email'
@@ -156,7 +168,7 @@ const Cta = () => {
                                         }}
                                         type='submit'
 
-                                        disabled={sending}
+                                        disabled={isLoading}
                                     >
                                         QUERO SER FLUENTE EM INGLÊS <Icon marginLeft={"1vh"} as={FaLongArrowAltRight} />
                                     </Button>

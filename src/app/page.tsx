@@ -5,6 +5,8 @@ import { Box, Container, Flex } from '@chakra-ui/react'
 
 import CallToActionBottom from '@/components/CallToActionBottom';
 
+import { Toaster } from "react-hot-toast"
+
 import Header from '@/views/home/first.section'
 import Video from '@/views/home/video.section';
 import Teacher from '@/views/home/teacher.section';
@@ -48,6 +50,7 @@ export default function Home() {
             />
 
             <Container maxWidth={"full"} m={0} p={0}  paddingBottom={{base: "12vh", md : "10vh"}} >
+                <Toaster containerClassName="!top-16 sm:!top-3.5 !bottom-16 sm:!bottom-3.5" position="top-right" />
                 <Header />
                 <Video />
                 <Teacher />
