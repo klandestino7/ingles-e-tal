@@ -6,6 +6,7 @@ const Logo = () => {
         <>
             <Image 
                 src={"https://via.placeholder.com/230x70"}
+                alt=""
             />
         </>
     )

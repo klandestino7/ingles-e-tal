@@ -78,7 +78,7 @@ const Questions = () => {
                     allowMultiple
                 >
                     {
-                        QuestionsArr.map(item => <AccItem {...item} />
+                        QuestionsArr.map((item, index) => <AccItem key={index} {...item} />
                         )
                     }
                 </Accordion>

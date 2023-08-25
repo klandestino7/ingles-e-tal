@@ -46,6 +46,7 @@ const Header = () => {
                 >
                     <Image 
                         src={"./images/BGMOBILE.png"}
+                        alt=""
                     />
                 </Box>
 

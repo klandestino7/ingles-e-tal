@@ -51,6 +51,7 @@ const Session = () => {
                         src={"./images/MOCKUP-GERAL-3.png"}
                         borderRadius={"7px"}
                         position={"absolute"}
+                        alt=""
 
                         style={{
                             transform: "scale(1.1)"

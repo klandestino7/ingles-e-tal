@@ -11,7 +11,7 @@ const TextTaged = ({
     return (
         <span style={{
             color: color ?? "var(--color-light)",
-            background: background ?? "var(--color-secondary)",
+            background: background ?? "var(--color-primary)",
             borderRadius: "3px",
             paddingInline: "5px"
         }}>
