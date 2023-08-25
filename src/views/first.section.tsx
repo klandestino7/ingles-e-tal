@@ -1,5 +1,5 @@
 'use client';
-import { Image, Box, Button, Container, Flex, Grid, GridItem, Heading, Icon, Text } from '@chakra-ui/react'
+import { Image, Box, Button, Container, Flex, Grid, GridItem, Heading, Icon, Text, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import Logo from '@/components/logo';
 
 import { BsFillCalendarCheckFill } from 'react-icons/bs';
@@ -14,6 +14,8 @@ const Header = () => {
     const subHeadingFontSize = { base: "23px", md: "26px", lg: "30px" }
     const bgMobile = { base: "", md: "url('./images/BG02.png')"}
     const bgMobileBox = { base: "block", md: "none" }
+
+    const colorBgMode = useColorModeValue("255,255,255", "18,18,18")
 
     return(
         <>
@@ -132,7 +134,7 @@ const Header = () => {
                 bottom={"2vh"}
                 justifyContent={"center"}
                 minH={"80px"}
-                background={{ base: "", md: "linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(18,18,18,1) 10%, rgba(18,18,18,0) 100%)"}}
+                background={{ base: "", md: `linear-gradient(0deg, rgba(${colorBgMode},1) 0%, rgba(${colorBgMode},1) 10%, rgba(${colorBgMode},0) 100%)`}}
                 w={"100%"}
                 alignItems={"flex-end"}
                 marginBottom={{ base: "6vh", md: "-2vh"}}
