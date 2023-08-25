@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './page.module.css'
-import { Box, Container, Flex } from '@chakra-ui/react'
+import { Box, Container, Flex, useColorMode } from '@chakra-ui/react'
 
 import CallToActionBottom from '@/components/CallToActionBottom';
 
@@ -15,9 +15,20 @@ import Questions from '@/views/home/questions.section';
 import Cta from '@/views/home/cta.section';
 import Forms from '@/views/home/form.section';
 
+import { useEffect } from "react"
+
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
+
+    const { colorMode, toggleColorMode } = useColorMode()
+    useEffect(() =>{
+        if (colorMode == "light") 
+        {
+            toggleColorMode();
+        }
+    }, [])
+
 
     return (
         <main className={styles.main}>
