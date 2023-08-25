@@ -13,13 +13,14 @@ const fonts: DeepPartial<Theme['fonts']> = {
     body: 'Titillium Web, sans-serif',
 };
 
-const colorMode = {
-    initialColorMode: "dark",
-    useSystemColorMode: false,
-}
+// const colorMode = {
+//     initialColorMode: "dark",
+//     useSystemColorMode: false,
+// }
 
 export const theme = extendTheme({
-    colorMode,
+    initialColorMode: "dark",
+    useSystemColorMode: false,
     styles: {
         global: (props: any) => ({
             body: {
