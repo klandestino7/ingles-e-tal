@@ -15,7 +15,7 @@ const fonts: DeepPartial<Theme['fonts']> = {
 
 const colorMode = {
     initialColorMode: "dark",
-    useSystemColorMode: true,
+    useSystemColorMode: false,
 }
 
 export const theme = extendTheme({

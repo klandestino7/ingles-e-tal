@@ -6,6 +6,7 @@ import { BsFillCalendarCheckFill } from 'react-icons/bs';
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi';
 import TextTaged from '@/components/TextTaged';
 
+import {  useEffect, useState } from "react";
 
 const Header = () => {
     const textMaxSize = {base: "full", sm: "600px"};
@@ -16,6 +17,21 @@ const Header = () => {
     const bgMobileBox = { base: "block", md: "none" }
 
     const colorBgMode = useColorModeValue("255,255,255", "18,18,18")
+
+    const [ showArrowIcon, setShowArrowIcon] = useState(true);
+
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setShowArrowIcon( position <= 500);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [])
 
     return(
         <>
@@ -75,7 +91,7 @@ const Header = () => {
                     fontWeight={"700"}
                     textTransform={"uppercase"}
                     // fontFamily={"var(--font-monserrat)"}
-                    background={"var(--color-primary)"}
+                    background={"var(--color-secondary)"}
                     w={"fit-content"}
                     paddingInline={"10px"}
                     borderRadius={"3px"}
@@ -130,21 +146,23 @@ const Header = () => {
             </Flex>
             
             <Flex
-                position={"absolute"}
+                position={"fixed"}
                 bottom={"2vh"}
                 justifyContent={"center"}
                 minH={"80px"}
                 background={{ base: "", md: `linear-gradient(0deg, rgba(${colorBgMode},1) 0%, rgba(${colorBgMode},1) 10%, rgba(${colorBgMode},0) 100%)`}}
                 w={"100%"}
                 alignItems={"flex-end"}
-                marginBottom={{ base: "6vh", md: "-2vh"}}
+                marginBottom={{ base: "2vh", md: "-2vh"}}
             >
-                <Icon 
-                    as={HiOutlineChevronDoubleDown}
-                    boxSize={{base: "4vh", md: "3vh"}}
-                    className={"arrowDown"}
-                    color={"var(--color-secondary)"}
-                />
+                {
+                    showArrowIcon && <Icon 
+                        as={HiOutlineChevronDoubleDown}
+                        boxSize={{base: "4vh", md: "3vh"}}
+                        className={"arrowDown"}
+                        color={"var(--color-secondary)"}
+                    />
+                }
             </Flex>
         </Flex>
         </>
