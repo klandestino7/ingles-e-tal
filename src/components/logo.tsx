@@ -5,9 +5,9 @@ const Logo = () => {
         <>
             <Image 
                 src={"./images/logo.png"}
-                style={{
-                    filter: "invert(1)"
-                }}
+                // style={{
+                //     filter: "invert(1)"
+                // }}
                 alt=""
             />
         </>

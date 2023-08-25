@@ -30,10 +30,8 @@ const QuestionsArr = [
     },
     {
         title:  "Não tenho tempo para me dedicar!",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.`
+        description: `Sem problemas! Você pode fazer isso em paralelo com o seu trabalho atual ou estudos…
+        tudo que você precisa é separar 1 hora do seu dia para estudar e aplicar os conteúdos.`
     },
     {
         title:  "Estou inseguro se vou coseguir aprender ou não!",
