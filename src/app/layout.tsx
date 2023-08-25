@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Providers } from './providers'
 import { Container } from '@chakra-ui/react'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Ingles e Tal',
@@ -19,6 +20,8 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        
+        <Script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js" />
       </body>
     </html>
   )

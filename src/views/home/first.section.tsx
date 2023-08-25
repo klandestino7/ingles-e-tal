@@ -41,12 +41,19 @@ const Header = () => {
             alignItems={"flex-start"}
             justifyContent={"center"}
             w={'full'}
-            bg={bgMobile}
-            backgroundSize={"contain !important"}
-            backgroundRepeat={"no-repeat !important"}
-            backgroundPosition={"right !important"}
             position={"relative"}
         >
+            <Flex
+                marginTop={"-2vh"}
+                w={"100%"}
+                h={"100%"}
+                position={"absolute"}
+                zIndex={"-2"}
+                bg={bgMobile}
+                backgroundSize={"contain !important"}
+                backgroundRepeat={"no-repeat !important"}
+                backgroundPosition={"right !important"}
+            />
             <Flex
                 width={flexWidth}
                 marginTop={{base: "", md: "5vh"}}
@@ -55,6 +62,7 @@ const Header = () => {
                 alignItems={{base: "center", sm: "flex-start"}}
                 justifyContent={"space-between"}
                 paddingBottom={"2vh"}
+                zIndex={"2 !important"}
             >
                 <Box
                     display={bgMobileBox}
@@ -140,6 +148,9 @@ const Header = () => {
                     _hover={{
                         background: "var(--color-secondary)"
                     }}
+
+                    as={"a"}
+                    href={"#subscription"}
                 >
                     QUERO SER FLUENTE EM INGLÊS
                 </Button>
@@ -166,6 +177,15 @@ const Header = () => {
                     />
                 }
             </Flex>
+
+            <Flex
+                marginTop={"-2vh"}
+                w={"100%"}
+                h={"100%"}
+                background={{ base: "", md: `linear-gradient(90deg, rgba(${colorBgMode},1) 0%, rgba(${colorBgMode},1) 10%, rgba(${colorBgMode},0) 100%)`}}
+                position={"absolute"}
+                zIndex={"-2"}
+            />
         </Flex>
         </>
     );

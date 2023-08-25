@@ -49,7 +49,7 @@ const Questions = () => {
     return (
         <Flex
             w={'full'}
-            marginTop={"8vh"}
+            marginTop={"5vh"}
             padding={{base: "0 2vh", md: "2vh" }}
             alignItems={"center"}
             justifyContent={"center"}

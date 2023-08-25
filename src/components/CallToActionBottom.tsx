@@ -16,6 +16,8 @@ const CallToActionBottom = () => {
 
     const handleScroll = () => {
         const position = window.pageYOffset;
+
+        console.log("position :: ", position);
         setDisplay( position >= 700);
     };
 
@@ -57,6 +59,8 @@ const CallToActionBottom = () => {
                     background: "white",
                     color: "var(--color-secondary)"
                 }}
+                as={"a"}
+                href={"#subscription"}
             >
                 Quero me inscrever para o aulão
             </Button>

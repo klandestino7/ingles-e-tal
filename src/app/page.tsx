@@ -1,15 +1,18 @@
 'use client';
 
-import Header from '@/views/first.section'
 import styles from './page.module.css'
 import { Box, Container, Flex } from '@chakra-ui/react'
-import Video from '@/views/video.section';
-import Teacher from '@/views/teacher.section';
-import Session from '@/views/session.section';
+
 import CallToActionBottom from '@/components/CallToActionBottom';
-import Questions from '@/views/questions.section';
-import Cta from '@/views/cta.section';
-import Forms from '@/views/form.section';
+
+import Header from '@/views/home/first.section'
+import Video from '@/views/home/video.section';
+import Teacher from '@/views/home/teacher.section';
+import Session from '@/views/home/session.section';
+import Questions from '@/views/home/questions.section';
+import Cta from '@/views/home/cta.section';
+import Forms from '@/views/home/form.section';
+
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
@@ -49,9 +52,9 @@ export default function Home() {
                 <Video />
                 <Teacher />
                 <Session />
+                <Cta />
                 {/* <Forms /> */}
                 <Questions />
-                <Cta />
             </Container>
             
             <CallToActionBottom />
