@@ -51,7 +51,7 @@ const Header = () => {
                         fontWeight={"bold"}
                         color={"var(--color-primary)"}
                     >
-                        Sua vaga está quase confirmada, só falta mais um passo!
+                        Sua vaga está <TextTaged>quase confirmada</TextTaged>, só falta mais um passo!
                     </Text>
 
                     <Text>
