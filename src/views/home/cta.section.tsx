@@ -110,7 +110,7 @@ const Cta = () => {
                             h={"100%"}
                             position={"absolute"}
 
-                            backdropFilter='blur(20px)'
+                            backdropFilter='blur(5px)'
                             borderRadius={"7px"}
 
                             bg={"rgba(20,20,20, .5)"}
@@ -132,7 +132,7 @@ const Cta = () => {
                         marginBottom={"2vh"}
                         maxW={"500px"}
                     >
-                        Clique no botão abaixo e dê o primeiro passo para conquista, sua fluência no inglês:
+                        Escreva abaixo o seu melhor email, e clique no botão para dar o primeiro passo para à conquista de sua fluência no inglês:
                     </Text>
                 
                     <FormControl>
