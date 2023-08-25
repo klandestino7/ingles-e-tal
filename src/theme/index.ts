@@ -1,4 +1,4 @@
-import { extendTheme, DeepPartial, Theme  } from "@chakra-ui/react"
+import { extendTheme, DeepPartial, Theme, StyleFunctionProps } from "@chakra-ui/react"
 
 const colors = {
     brand: {
@@ -18,15 +18,35 @@ const fonts: DeepPartial<Theme['fonts']> = {
 //     useSystemColorMode: false,
 // }
 
-export const theme = extendTheme({
+// export const theme = extendTheme({
+//     initialColorMode: "dark",
+//     useSystemColorMode: false,
+//     styles: {
+//         global: (props: any) => ({
+//             body: {
+//             },
+//         }),
+//     },
+//     fonts,
+//     colors,
+// })
+
+
+
+
+const config = {
     initialColorMode: "dark",
     useSystemColorMode: false,
+}
+
+export const globalStyles = {
+    config,
+    colors,
+    fonts,
     styles: {
-        global: (props: any) => ({
+        global: (props: StyleFunctionProps) => ({
             body: {
             },
         }),
     },
-    fonts,
-    colors,
-})
+};
