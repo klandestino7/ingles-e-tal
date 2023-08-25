@@ -146,7 +146,7 @@ const Header = () => {
             </Flex>
             
             <Flex
-                position={"fixed"}
+                position={"absolute"}
                 bottom={"2vh"}
                 justifyContent={"center"}
                 minH={"80px"}
@@ -161,6 +161,8 @@ const Header = () => {
                         boxSize={{base: "4vh", md: "3vh"}}
                         className={"arrowDown"}
                         color={"var(--color-secondary)"}
+                        position={"fixed"}
+                        bottom={"2vh"}
                     />
                 }
             </Flex>
