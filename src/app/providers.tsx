@@ -21,6 +21,16 @@ export function Providers({
         <QueryClientProvider client={queryClient}>
             <CacheProvider>
                 <ChakraProvider theme={theme}>
+                    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-SGFPSN2KPW" />
+                    <Script id="google-analytics">
+                        {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                
+                        gtag('config', 'G-SGFPSN2KPW');
+                        `}
+                    </Script>
                     {children}
                     <Script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js" />
                 </ChakraProvider>
