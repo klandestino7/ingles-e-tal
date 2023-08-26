@@ -29,7 +29,7 @@ const Video = () => {
         >
             <Box
                 w={{ base: "100%", sm: "500px",  md: "90vw", lg: "80vw" }}
-                h={{ base: "25vh", sm: "30vh",  md: "55vh", lg: "75vh" }}
+                h={{ base: "25vh", sm: "30vh",  md: "55vh", lg: "80vh" }}
             >
                 {/* <iframe src="https://player.vimeo.com/video/858244973?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
                     frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
