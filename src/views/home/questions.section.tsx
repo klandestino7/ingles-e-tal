@@ -9,36 +9,26 @@ import TextTaged from '@/components/TextTaged';
 const QuestionsArr = [
     {
         title:  "Isso é muito difícil de entender?",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.`
+        description: `Não, a Jornada do Zero à comunicação é um evento online e gratuito onde vou te ajudar
+        te dando todas explicações necessárias para sua melhor compreensão de todas as informações entregues na Jornada. `
     },
     {
         title:  "Não sei se isso é pra mim!",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.`
+        description: `A Jornada do Zero à Comunicação é para quem está querendo aprender de uma vez por todas a se comunicar em inglês. `
     },
     {
         title:  "Preciso ter algum conhecimento básico com inglês?",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.`
+        description: `A Jornada do Zero à Comunicação é para pessoas do zero ao intermediário, vamos lhe ajudar a
+        se comunicar com segurança e tranquilidade para conduzir uma conversa em inglês.`
     },
     {
-        title:  "Não tenho tempo para me dedicar!",
-        description: `Sem problemas! Você pode fazer isso em paralelo com o seu trabalho atual ou estudos…
-        tudo que você precisa é separar 1 hora do seu dia para estudar e aplicar os conteúdos.`
+        title:  "Não tenho tempo para assistir ao vivo",
+        description: `A Jornada ficará disponível por tempo limitado, mas você poderá assistir no dia seguinte ao evento gravado.`
     },
     {
-        title:  "Estou inseguro se vou coseguir aprender ou não!",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.`
+        title:  "Estou inseguro se vou conseguir aprender ou não!",
+        description: `A Jornada do Zero à Comunicação é um evento ao vivo e gratuito focado em te ajudar de uma forma clara
+        e pratica, você terá todo suporte para tirar suas dúvidas facilitando o seu aprendizado.`
     },
 ]
 
