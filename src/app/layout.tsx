@@ -7,7 +7,7 @@ import { useState } from 'react'
 import FacebookPixel from '@/components/facebookPixel'
 
 export const metadata: Metadata = {
-  title: "Inglês e Tal",
+  title: "Jornada do Zero à Comunicação - Inglês e Tal",
   description: "Descubra como aprender inglês com o que você ama fazer no dia a dia, saindo do zero à comunicação em 6 meses.",
 }
 

@@ -33,7 +33,7 @@ export default function Home() {
     return (
         <main className={styles.main}>
             <NextSeo
-                title="Inglês e Tal"
+                title="Jornada do Zero à Comunicação - Inglês e Tal"
                 description="Descubra como aprender inglês com o que você ama fazer no dia a dia, saindo do zero à comunicação em 6 meses."
                 canonical="https://www.inglesetal.com/"
                 // openGraph={{

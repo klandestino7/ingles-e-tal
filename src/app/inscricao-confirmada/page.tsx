@@ -9,6 +9,12 @@ import { NextSeo } from 'next-seo';
 
 import SimpleFooter from '@/views/footer/simple';
 import Video from '@/views/inscricao-confirmada/video.section';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: "Falta apenas 1 passo, Jornada do Zero à Comunicação - Inglês e Tal",
+    description: "Descubra como aprender inglês com o que você ama fazer no dia a dia, saindo do zero à comunicação em 6 meses.",
+}
 
 export default function Home() {
 
