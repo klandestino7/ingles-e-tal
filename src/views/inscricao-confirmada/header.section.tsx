@@ -83,13 +83,13 @@ const Header = () => {
                     >
                         <ReactPlayer 
                             playing
-                            url='https://storage.cloud.google.com/douz_bucket_go/video-obrigado?authuser=2'
+                            url='https://storage.googleapis.com/douz_bucket_go/video-obrigado.mov'
                             width={"100%"}
                             height={"100%"}
                             playIcon={<PlayButton />}
                             onClickPreview={() => { setControllers(true) }}
                             controls={true}
-                            light="https://storage.cloud.google.com/douz_bucket_go/video02.png?authuser=2"
+                            light="https://storage.googleapis.com/douz_bucket_go/video02.png"
                         />
                     </Box>
                 </Flex>
