@@ -9,6 +9,7 @@ const Logo = () => {
                 style={{
                     filter: colorMode == "light" ? 'invert(1)' : 'invert(0)'
                 }}
+                w={"260px"}
                 alt=""
             />
         </>
