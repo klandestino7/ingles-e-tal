@@ -1,4 +1,3 @@
-
 export interface SubscribeProps {
     email: string;
 }

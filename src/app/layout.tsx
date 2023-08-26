@@ -4,6 +4,7 @@ import { Providers } from './providers'
 import { Container } from '@chakra-ui/react'
 import Script from 'next/script'
 import { useState } from 'react'
+import FacebookPixel from '@/components/facebookPixel'
 
 export const metadata: Metadata = {
   title: "Inglês e Tal",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body>
         <Providers>
           {children}
+          <FacebookPixel />
         </Providers>
       </body>
     </html>
