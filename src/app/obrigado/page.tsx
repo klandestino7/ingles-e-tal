@@ -7,12 +7,6 @@ import { Box, Container, Flex, Text } from '@chakra-ui/react'
 import CallToActionBottom from '@/components/CallToActionBottom';
 import { NextSeo } from 'next-seo';
 import SimpleFooter from '@/views/footer/simple';
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-    title: "Obrigado, Jornada do Zero à Comunicação - Inglês e Tal",
-    description: "Descubra como aprender inglês com o que você ama fazer no dia a dia, saindo do zero à comunicação em 6 meses.",
-}
 
 export default function Home() {
 
