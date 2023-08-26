@@ -3,8 +3,12 @@
 import InstagramCard from '@/components/InstagramCard';
 import TextTaged from '@/components/TextTaged';
 import WhatsAppCard from '@/components/WhatsAppCard';
-import { Box, Container, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Container, Flex, Icon, Image, Text } from '@chakra-ui/react'
+import { BsFillPlayFill } from 'react-icons/bs';
 
+import { useState } from "react";
+
+import ReactPlayer from 'react-player';
 
 const Header = () => {
     const textMaxSize = {base: "full", sm: "600px"};
@@ -13,6 +17,8 @@ const Header = () => {
     const subHeadingFontSize = { base: "23px", md: "26px", lg: "30px" }
     const bgMobile = { base: "", md: "url('./images/BG02.png')"}
     const bgMobileBox = { base: "block", md: "none" }
+
+    const [ useControllers, setControllers ] = useState(false); 
 
     return (
         <Flex
@@ -72,10 +78,18 @@ const Header = () => {
 
                     <Box
                         minH={{ base: "",   md : "320px" }}
+                        w={"1240px"}
+                        h={"698px"}
                     >
-                        <Image 
-                            src="https://via.placeholder.com/1240x698"
-                            alt=""
+                        <ReactPlayer 
+                            playing
+                            url='https://storage.cloud.google.com/douz_bucket_go/video-obrigado?authuser=2'
+                            width={"100%"}
+                            height={"100%"}
+                            playIcon={<PlayButton />}
+                            onClickPreview={() => { setControllers(true) }}
+                            controls={true}
+                            light="https://storage.cloud.google.com/douz_bucket_go/video02.png?authuser=2"
                         />
                     </Box>
                 </Flex>
@@ -86,5 +100,18 @@ const Header = () => {
         </Flex>
     )
 }
+
+const PlayButton = () => {
+    const buttonPlay = { base: "100px", md: "225px"}
+
+    return (
+        <Box>
+            <Flex>
+                <Icon as={BsFillPlayFill} boxSize={buttonPlay} color={"white"} />
+            </Flex>
+        </Box>
+    )
+}
+
 
 export default Header
