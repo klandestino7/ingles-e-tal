@@ -132,7 +132,7 @@ const Cta = () => {
                         marginBottom={"2vh"}
                         maxW={"500px"}
                     >
-                        Escreva abaixo o seu melhor email, e clique no botão para dar o primeiro passo para à conquista de sua fluência no inglês:
+                        Escreva abaixo o seu melhor email, e clique no botão para dar o primeiro passo para à conquista da sua comunicação em inglês:
                     </Text>
                 
                     <FormControl>
@@ -170,7 +170,7 @@ const Cta = () => {
 
                                         disabled={isLoading}
                                     >
-                                        QUERO SER FLUENTE EM INGLÊS <Icon marginLeft={"1vh"} as={FaLongArrowAltRight} />
+                                        QUERO ME COMUNICAR EM INGLÊS <Icon marginLeft={"1vh"} as={FaLongArrowAltRight} />
                                     </Button>
 
                                     <Box

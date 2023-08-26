@@ -133,7 +133,7 @@ const Header = () => {
                     lineHeight={"1.1em"}
                     fontWeight={"700"}
                 >
-                    Clique no botão para garantir a sua fluência 👇🏼
+                    Clique no botão para começar melhorar sua comunicação em inglês 👇🏼
                 </Text>
 
                 <Button
@@ -152,7 +152,7 @@ const Header = () => {
                     as={"a"}
                     href={"#subscription"}
                 >
-                    QUERO SER FLUENTE EM INGLÊS
+                    QUERO ME COMUNICAR EM INGLÊS
                 </Button>
             </Flex>
             
