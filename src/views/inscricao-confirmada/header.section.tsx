@@ -20,6 +20,12 @@ const Header = () => {
 
     const [ useControllers, setControllers ] = useState(false); 
 
+    const videoHeight = {
+        base: "180px",
+        md: "300px",
+        lg: "698px"
+    }
+
     return (
         <Flex
             padding={{base: "0 2vh", md: "2vh" }}
@@ -67,8 +73,7 @@ const Header = () => {
                 </Box>
 
                 <Flex
-                    direction={{base: "column-reverse", md:"row"}}
-                
+                    direction={{base: "column-reverse", lg:"row"}}
                 >
                     <WhatsAppCard 
                         link={"https://chat.whatsapp.com/Bi8tocymZg1JNAAFdMTBfu"}
@@ -77,9 +82,8 @@ const Header = () => {
                     />
 
                     <Box
-                        minH={{ base: "",   md : "320px" }}
-                        w={"1240px"}
-                        h={"698px"}
+                        w={{ base: "100%", sm: "500px",  md: "80vw", lg: "80vw" }}
+                        h={{ base: "20vh", sm: "30vh",  md: "45vh", lg: "80vh" }}
                     >
                         <ReactPlayer 
                             playing
