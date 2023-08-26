@@ -31,6 +31,13 @@ export function Providers({
                         gtag('config', 'G-SGFPSN2KPW');
                         `}
                     </Script>
+
+                    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-SGFPSN2KPW"
+                        height="0" width="0" style={{
+                            display: "none", visibility: "hidden"
+                        }}></iframe>
+                    </noscript>
+
                     {children}
                     <Script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js" />
                 </ChakraProvider>
