@@ -132,7 +132,7 @@ const Cta = () => {
                         marginBottom={"2vh"}
                         maxW={"500px"}
                     >
-                        Escreva abaixo o seu melhor email, e clique no botão para dar o primeiro passo para à conquista da sua comunicação em inglês:
+                        Escreva abaixo o seu melhor email e clique no botão para dar o primeiro passo para a conquista da sua comunicação em inglês:
                     </Text>
                 
                     <FormControl>

@@ -133,7 +133,7 @@ const Header = () => {
                     lineHeight={"1.1em"}
                     fontWeight={"700"}
                 >
-                    Clique no botão para começar melhorar sua comunicação em inglês 👇🏼
+                    Clique no botão para começar a melhorar a sua comunicação em inglês 👇🏼
                 </Text>
 
                 <Button

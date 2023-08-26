@@ -67,7 +67,7 @@ const Session = () => {
                     <Text
                         marginBottom={"2vh"}
                     >
-                        Descubra com precisão o método que utilizei que me levou à comunicação em inglês em apenas 6 meses
+                        Descubra com precisão o método que eu utilizei que me levou à comunicação em inglês em apenas 6 meses
                     </Text>
                     <List spacing={3}>
                         <ListItem>
