@@ -20,7 +20,7 @@ const Video = () => {
     return (
         <Flex
             marginTop={{ base: "5vh", md : "5vh"}}
-            marginBottom={{ base: "5vh", md : "0"}}
+            marginBottom={{ base: "5vh", md : "5vh"}}
             padding={{base: "0 2vh", md: "2vh" }}
             h={{ base: "auto", md: "80vh"}}
             alignItems={"flex-start"}
@@ -28,7 +28,7 @@ const Video = () => {
             w={'full'}
         >
             <Box
-                w={{ base: "100%", sm: "500px",  md: "90vw", lg: "80vw" }}
+                w={{ base: "100%", sm: "500px",  md: "90vw", lg: "70vw" }}
                 h={{ base: "30vh", sm: "30vh",  md: "55vh", lg: "80vh" }}
             >
                 {/* <iframe src="https://player.vimeo.com/video/858244973?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
