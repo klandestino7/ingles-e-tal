@@ -37,7 +37,7 @@ const Header = () => {
         <>
         <Flex
             padding={{base: "0 2vh", md: "2vh" }}
-            h={"100vh"}
+            minH={"100vh"}
             alignItems={"flex-start"}
             justifyContent={"center"}
             w={'full'}
