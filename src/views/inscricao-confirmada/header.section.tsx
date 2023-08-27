@@ -83,7 +83,7 @@ const Header = () => {
 
                     <Box
                         w={{ base: "100%", sm: "500px",  md: "80vw", lg: "80vw" }}
-                        h={{ base: "20vh", sm: "30vh",  md: "45vh", lg: "80vh" }}
+                        h={{ base: "30vh", sm: "30vh",  md: "45vh", lg: "80vh" }}
                     >
                         <ReactPlayer 
                             playing
