@@ -18,6 +18,7 @@ import Forms from '@/views/home/form.section';
 import { useEffect } from "react"
 
 import { NextSeo } from 'next-seo';
+import { redirect } from 'next/navigation';
 
 export default function Home() {
 
@@ -29,6 +30,10 @@ export default function Home() {
     //     }
     // }, [])
 
+
+    useEffect(() => {
+        redirect("/aulao")
+    }, [])
 
     return (
         <main className={styles.main}>
