@@ -104,6 +104,7 @@ const Modules = () => {
                         {
                             methods.map((item, index) => (
                                 <GridItem
+                                    key={index}
                                     borderRadius="15px"
                                     bg={index % 2 ? "var(--color-primary)" : "blackAlpha.200"}
                                     padding={"2vh"}
