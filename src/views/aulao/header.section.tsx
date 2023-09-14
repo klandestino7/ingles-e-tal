@@ -2,7 +2,7 @@
 
 import InstagramCard from '@/components/InstagramCard';
 import TextTaged from '@/components/TextTaged';
-import WhatsAppCard from '@/components/WhatsAppCard';
+import KiwifiCard from '@/components/KiwifiCard';
 import { Box, Container, Flex, Icon, Image, Text } from '@chakra-ui/react'
 import { BsFillPlayFill } from 'react-icons/bs';
 
@@ -50,7 +50,7 @@ const Header = () => {
                     fontWeight={"700"}
                     fontFamily={"var(--font-monserrat)"}
                 >
-                    CADASTRO REALIZADO COM <TextTaged background={"var(--color-secondary)"}>SUCESSO</TextTaged>
+                    REVISÃO DO <TextTaged background={"var(--color-secondary)"}>AULÃO</TextTaged>
                 </Text>
 
                 <Box
@@ -63,21 +63,21 @@ const Header = () => {
                         fontWeight={"bold"}
                         color={"var(--color-primary)"}
                     >
-                        Sua vaga está <TextTaged>quase confirmada</TextTaged>, só falta mais um passo!
+                        Assista abaixo nosso aulão que foi transimitido ao vivo.
                     </Text>
 
-                    <Text>
+                    {/* <Text>
                         Acesse agora nosso grupo silencioso no WhatsApp para não perder a aula.
-                    </Text>
+                    </Text> */}
 
                 </Box>
 
                 <Flex
                     direction={{base: "column-reverse", lg:"row"}}
                 >
-                    <WhatsAppCard 
-                        link={"https://chat.whatsapp.com/Bi8tocymZg1JNAAFdMTBfu"}
-                        nome={"@inglesetal - Aulão ao vivo - 13/09"}
+                    <KiwifiCard 
+                        link={"https://bit.ly/3EImfnK"}
+                        nome={"Inscrição - Método do Zero a Comunicação"}
                         picture={"./images/whats.jpg"}
                     />
 
@@ -87,7 +87,7 @@ const Header = () => {
                     >
                         <ReactPlayer 
                             playing
-                            url='https://www.youtube.com/watch?v=xOzZ05fXAEc'
+                            url='https://www.youtube.com/watch?v=WahlqhFw8pw'
                             width={"100%"}
                             height={"100%"}
                             playIcon={<PlayButton />}

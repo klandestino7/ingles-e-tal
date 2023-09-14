@@ -1,7 +1,6 @@
 import { Avatar, Box, Button, Flex, Text, useColorModeValue } from "@chakra-ui/react"
 
-
-const WhatsAppCard = ({
+const KiwifiCard = ({
     link,
     picture,
     nome,
@@ -54,7 +53,7 @@ const WhatsAppCard = ({
                 target="_blank"
                 color={"white"}
             >
-                Acessar agora o grupo
+                Quero me inscrever
             </Button>
         </Flex>
     )
@@ -93,5 +92,5 @@ const UserAvatar = ({
     )
 }
 
-export default WhatsAppCard
+export default KiwifiCard
 
