@@ -63,7 +63,7 @@ const Header = () => {
                         fontWeight={"bold"}
                         color={"var(--color-primary)"}
                     >
-                        Assista abaixo nosso aulão que foi transimitido ao vivo.
+                        Assista abaixo nosso aulão que foi transmitido ao vivo.
                     </Text>
 
                     {/* <Text>
@@ -77,7 +77,7 @@ const Header = () => {
                 >
                     <KiwifiCard 
                         link={"https://bit.ly/3EImfnK"}
-                        nome={"Inscrição - Método do Zero a Comunicação"}
+                        nome={"Inscrição - Método do Zero à Comunicação"}
                         picture={"./images/whats.jpg"}
                     />
 
