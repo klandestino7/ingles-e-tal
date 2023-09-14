@@ -1,14 +1,17 @@
 'use client';
 
-import Header from '@/views/aulao/header.section';
-
 import styles from '../page.module.css'
 import { Box, Container, Flex, Text } from '@chakra-ui/react'
 import CallToActionBottom from '@/components/CallToActionBottom';
 import { NextSeo } from 'next-seo';
 
 import SimpleFooter from '@/views/footer/simple';
-import Video from '@/views/inscricao-confirmada/video.section';
+
+import Teacher from '@/views/home/teacher.section';
+import Header from '@/views/aulao/header.section';
+import Video from '@/views/aulao/video.section';
+import Modules from '@/views/aulao/modules.section';
+import Cta from '@/views/aulao/cta.section';
 
 export default function Home() {
 
@@ -30,8 +33,15 @@ export default function Home() {
                 minH={"99vh"}
             >
                 <Header />
+                <Video />
+                <Teacher />
+                <Modules />
+                <Cta />
             </Container>
             
+
+            <CallToActionBottom />
+
             <SimpleFooter />
         </main>
     )

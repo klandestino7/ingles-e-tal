@@ -10,7 +10,7 @@ import { useState } from "react";
 
 import ReactPlayer from 'react-player';
 
-const Header = () => {
+const Video = () => {
     const textMaxSize = {base: "full", sm: "600px"};
     const flexWidth = {base: 'full', md: 800, lg: 1300};
     const headingFontSize = { base: "30px", md: "35px", lg: "40px" }
@@ -43,37 +43,47 @@ const Header = () => {
                 gap={"2vh"}
                 marginTop={"4vh"}
             >
-                <Text
-                    as={"h2"}
-                    fontSize={headingFontSize}
-                    lineHeight={"1.2em"}
-                    fontWeight={"700"}
-                    fontFamily={"var(--font-monserrat)"}
-                >
-                    REVISÃO DO <TextTaged background={"var(--color-secondary)"}>AULÃO</TextTaged>
-                </Text>
 
-                <Box
-                    maxW={"800px"}
-                    fontSize={"1.2em"}
-                >
-                    <Text
-                        fontSize={"1.3em"}
-                        fontFamily={"montserrat"}
-                        fontWeight={"bold"}
-                        color={"var(--color-primary)"}
+                <Flex
+                    direction={{base: "column-reverse", lg:"row"}}
                     >
-                        Assista abaixo nosso aulão que foi transmitido ao vivo.
-                    </Text>
+                    <KiwifiCard 
+                        link={"https://bit.ly/3EImfnK"}
+                        nome={"Inscrição - Método do Zero à Comunicação"}
+                        picture={"./images/whats.jpg"}
+                    />
 
-                    {/* <Text>
-                        Acesse agora nosso grupo silencioso no WhatsApp para não perder a aula.
-                    </Text> */}
-
-                </Box>
+                    <Box
+                        w={{ base: "100%", sm: "500px",  md: "80vw", lg: "80vw" }}
+                        h={{ base: "30vh", sm: "30vh",  md: "45vh", lg: "80vh" }}
+                        >
+                        <ReactPlayer 
+                            playing
+                            url='https://www.youtube.com/watch?v=WahlqhFw8pw'
+                            width={"100%"}
+                            height={"100%"}
+                            playIcon={<PlayButton />}
+                            onClickPreview={() => { setControllers(true) }}
+                            controls={true}
+                        />
+                    </Box>
+                </Flex>
             </Flex>
         </Flex>
+        )
+}
+
+const PlayButton = () => {
+    const buttonPlay = { base: "100px", md: "225px"}
+
+    return (
+        <Box>
+            <Flex>
+                <Icon as={BsFillPlayFill} boxSize={buttonPlay} color={"white"} />
+            </Flex>
+        </Box>
     )
 }
 
-export default Header
+
+export default Video

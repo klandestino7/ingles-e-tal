@@ -16,8 +16,6 @@ const CallToActionBottom = () => {
 
     const handleScroll = () => {
         const position = window.pageYOffset;
-
-        console.log("position :: ", position);
         setDisplay( position >= 700);
     };
 
@@ -60,13 +58,13 @@ const CallToActionBottom = () => {
                     color: "var(--color-secondary)"
                 }}
                 as={"a"}
-                href={"#subscription"}
+                href={"https://bit.ly/3EImfnK"}
+                target={"_blank"}
             >
-                Quero me inscrever para o aulão
+                Quero me inscrever agora
             </Button>
         </Flex>
     )
 }
-
 
 export default CallToActionBottom;
