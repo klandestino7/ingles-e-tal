@@ -84,7 +84,7 @@ const Cta = () => {
                             href={"https://bit.ly/3EImfnK"}
                             target={"_blank"}
                         >
-                            QUERO ME INSCREVER NO AGORA <Icon marginLeft={"1vh"} as={FaLongArrowAltRight} />
+                            QUERO ME INSCREVER AGORA <Icon marginLeft={"1vh"} as={FaLongArrowAltRight} />
                         </Button>
 
                     </Flex>
