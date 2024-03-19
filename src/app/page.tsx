@@ -30,10 +30,6 @@ export default function Home() {
     //     }
     // }, [])
 
-    useEffect(() => {
-        redirect("/aulao")
-    }, [])
-
     return (
         <main className={styles.main}>
             <NextSeo
