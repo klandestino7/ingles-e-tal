@@ -35,7 +35,7 @@ const fonts: DeepPartial<Theme['fonts']> = {
 
 
 const config = {
-    initialColorMode: "light",
+    initialColorMode: "dark",
     useSystemColorMode: true,
 }
 
